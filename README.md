@@ -10,3 +10,9 @@ The second aim of the project is for it to be mostly automated, in terms of depl
 
 
 ![diagram](https://user-images.githubusercontent.com/43972504/212291774-110c05db-6847-4c6b-be22-5b8296f9b98c.jpg)
+
+# Build
+To build the project you need use `terraform init` in root project directory, then use `terraform apply`, providing Project Id from GCP. 
+
+# How to use
+Sample requests and images are inside `sandbox` directory
