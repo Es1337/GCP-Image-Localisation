@@ -1,7 +1,12 @@
-# GCP Image Localisation
+# GCP Image to Text
 
-The goal of the project is to create an API for detecting the localisation of origin of a photo.
-The API will be built using Google Cloud Platform, with API code being written in Python and split into Cloud Functions. For text detection on an image as well as it's translation I'll use Cloud Vision API, for storing images - Cloud Storage, to keep user data - Datastore. 
+The goal of the project is to create an API for detecting text from a photo.
+The API will be built using Google Cloud Platform, with API code being written in Python and split into Cloud Functions. For text detection on an imageI'll use Cloud Vision API, for storing images - Cloud Storage, to keep user data - Firestore. 
+API will consist fo three Functions:
+* one triggered by uploading image to Google Storage, getting it processed, and saving the result to Firestore
+* one for user to save their credentials in Firestore
+* one for the user to get the result back from Firestore
 The second aim of the project is for it to be mostly automated, in terms of deployment, testing and maintenance. Infrastructure will be provisioned with Terraform.
 
-![Untitled (1)](https://user-images.githubusercontent.com/43972504/206585709-6cc1708f-6954-46bb-9ea6-0506b1065fa7.jpg)
+
+![diagram](https://user-images.githubusercontent.com/43972504/212291774-110c05db-6847-4c6b-be22-5b8296f9b98c.jpg)
