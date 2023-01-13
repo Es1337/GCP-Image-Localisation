@@ -1,0 +1,4 @@
+curl -X POST --data-binary @sandbox/1.jpg \
+    -H "Authorization: Bearer ya29.a0AX9GBdUtXU62ugONTrMdG47OBC4QpmY4J5wKoUz5U0DOsgblWGxG8gGqqJZpDWyMwWDmxr3jqgSNCxqa_Y22lPcosFB-N_f1YEUNoGT4CCdSRZcwxgFJaTAsDDKgZryZHENALO77nhjPzoEDjjDI8EyBfne-aCgYKAXUSARESFQHUCsbCbwSiV-jqbrA4u4LoY_lQxw0163" \
+    -H "Content-Type: image/jpeg" \
+    "https://storage.googleapis.com/upload/storage/v1/b/image-bucket-test-8549-mk/o?uploadType=media&name=1.jpg"
